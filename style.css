@@ -1,0 +1,298 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+body {
+    padding: 30px 20px 30px 20px;
+    background-image: url('images/pngtree-grey-crumpled-paper-texture-background-image_955629.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden; 
+}
+
+/* Section One */
+.section-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center !important;  
+}
+
+.section-one .content {
+    width: 35%;
+}
+
+.section-one .content .banner-heading1 {
+    font-size: 70px;
+    margin-left: 75px !important;
+}
+
+.section-one .content .banner-heading2 {
+    font-size: 30px;
+    margin-left: 80px !important;
+}
+
+.section-one .content .banner-paragraph {
+    margin-left: 80px !important;
+}
+
+button {
+    background-color: #ed4604;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 80px !important;
+}
+
+button:hover {
+    background-color: #ffb74d;
+    transform: scale(1.05);
+}
+
+.section-one .image {
+    width: 60%;
+    overflow: hidden; 
+}
+
+.section-one .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 226px;
+}
+
+/* Section Two */
+.section-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 100vw; 
+}
+
+.image.souse {
+    width: 230px;
+    margin-top: -143px;
+}
+
+.section-two .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.section-two .content {
+    width: 40%;
+    margin-right: -72px;
+}
+
+.section-two .content h1 {
+    font-size: 40px;
+}
+
+.section-two .content p {
+    line-height: 1.5;
+}
+
+.image.redPrawn {
+    width: 281px;
+    margin-top: 65px;
+}
+
+/* Section Three */
+.section-three {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+    margin-top: -118px;
+    max-width: 100vw; 
+}
+
+.section-three .image {
+    width: 30%;
+}
+
+.section-three .image img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+
+.section-three .content {
+    width: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+    .section-one {
+        display: flex !important;
+        padding: 0px;
+        height: 769px;
+        text-align: left;
+        max-width: 100%;
+        flex-direction: column !important;
+    }
+    .section-one .content {
+        width: 90%;
+    }
+
+    .section-one .content .banner-heading1, .section-one .content .banner-heading2, .section-one .content .banner-paragraph, button {
+        margin-left: 0px !important ;
+    }
+
+    .section-one .image {
+        width: 100%;
+        overflow: hidden;
+        margin-top: -138px;
+        margin-left: -43px;
+    }
+    .section-two .content {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .image.souse, .image.redPrawn {
+        display: none;
+    }
+    .section-three {
+        padding: 0px;
+        margin-top: -25px;
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .section-three .image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .section-one {
+        display: flex !important;
+        padding: 0px;
+        height: 800px;
+        text-align: left;
+        max-width: 100%;
+        flex-direction: column !important;
+        text-align: center; 
+    }
+    .section-one .content {
+        width: 90%;
+    }
+
+    .section-one .content .banner-heading1, .section-one .content .banner-heading2, .section-one .content .banner-paragraph, button {
+        margin-left: 0px !important;
+    }
+
+    .section-one .image {
+        width: 90%;
+        overflow: hidden;
+        margin-top: -144px;
+        margin-left: -121px;
+    }
+    .section-two .content {
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .image.souse, .image.redPrawn {
+        display: none;
+    }
+    .section-three {
+        padding: 0px;
+        margin-top: 0px;
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .section-three .image {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .section-one {
+        height: 487px;
+        flex-direction: row !important;
+        margin-left: 22px;
+        text-align: left !important; 
+    }
+    .section-one .image {
+        width: 95%;
+        overflow: hidden;
+        margin-top: -169px !important;
+        margin-right: -23px !important;
+    }
+    .section-three .image {
+        width: 42%;
+    }
+    .image.souse, .image.redPrawn {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .section-one {
+        height: 487px;
+        flex-direction: row !important;
+        margin-left: 100px;
+        text-align: left !important; 
+    }
+    .section-one .image {
+        width: 100%;
+        overflow: hidden;
+        margin-top: -156px !important;
+        margin-right: 45px !important;
+    }
+    .section-three .image {
+        width: 42%;
+    }
+    .image.souse, .image.redPrawn {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section-one {
+        height: 608px;
+        flex-direction: row !important;
+        margin-left: 200px;
+        text-align: left !important; 
+    }
+    .section-one .image {
+        width: 100%;
+        overflow: hidden;
+        margin-top: -56px !important;
+        margin-left: -382px !important;
+    }
+    .section-three {
+        padding: 0px;
+        margin-top: 33px;
+        max-width: 100%;
+        flex-direction: row !important;
+    }
+    .section-three .image {
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 40% !important;
+    }
+}
